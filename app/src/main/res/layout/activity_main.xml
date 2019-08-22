@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/title2"
+            android:layout_weight="1.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share my Location"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/primary_ripple"/>
+        <Button
+            android:id="@+id/retrieveBtn"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Retrieve Location"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/primary_ripple"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llroot"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:background="#ffffff"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"/>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_close"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/ybid"
+            android:text="Enter mobile number for location"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="2">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </Spinner>
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                android:maxLength="12"
+                android:paddingRight="16dp"
+                android:hint="Mobile no. with country code"
+                android:gravity="top|left"
+                android:layout_weight=".3"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>
